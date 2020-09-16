@@ -15,6 +15,14 @@
 		CD39E99024700FA500C05D8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD39E98E24700FA500C05D8C /* LaunchScreen.storyboard */; };
 		CD39E99B24700FA500C05D8C /* Photorama_2020Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD39E99A24700FA500C05D8C /* Photorama_2020Tests.swift */; };
 		CD39E9A624700FA500C05D8C /* Photorama_2020UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD39E9A524700FA500C05D8C /* Photorama_2020UITests.swift */; };
+		CD39E9B42470103C00C05D8C /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD39E9B32470103C00C05D8C /* PhotosViewController.swift */; };
+		CD39E9B6247010DF00C05D8C /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD39E9B5247010DF00C05D8C /* FlickrAPI.swift */; };
+		CD39E9B8247014CE00C05D8C /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD39E9B7247014CE00C05D8C /* PhotoStore.swift */; };
+		CD39E9BA24701ACE00C05D8C /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD39E9B924701ACE00C05D8C /* Photo.swift */; };
+		CD88FADE24794549009B2D36 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88FADD24794549009B2D36 /* PhotoDataSource.swift */; };
+		CD88FAE02479490B009B2D36 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88FADF2479490B009B2D36 /* PhotoCollectionViewCell.swift */; };
+		CD88FAE224794E10009B2D36 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88FAE124794E10009B2D36 /* ImageStore.swift */; };
+		CD88FAE424794F1E009B2D36 /* PhotoInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD88FAE324794F1E009B2D36 /* PhotoInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		CD39E9A124700FA500C05D8C /* Photorama-2020UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Photorama-2020UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD39E9A524700FA500C05D8C /* Photorama_2020UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photorama_2020UITests.swift; sourceTree = "<group>"; };
 		CD39E9A724700FA500C05D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD39E9B32470103C00C05D8C /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		CD39E9B5247010DF00C05D8C /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
+		CD39E9B7247014CE00C05D8C /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		CD39E9B924701ACE00C05D8C /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		CD88FADD24794549009B2D36 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
+		CD88FADF2479490B009B2D36 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD88FAE124794E10009B2D36 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		CD88FAE324794F1E009B2D36 /* PhotoInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +118,14 @@
 				CD39E98324700FA100C05D8C /* AppDelegate.swift */,
 				CD39E98524700FA100C05D8C /* SceneDelegate.swift */,
 				CD39E98724700FA100C05D8C /* ViewController.swift */,
+				CD39E9B32470103C00C05D8C /* PhotosViewController.swift */,
+				CD88FAE324794F1E009B2D36 /* PhotoInfoViewController.swift */,
+				CD88FADD24794549009B2D36 /* PhotoDataSource.swift */,
+				CD88FADF2479490B009B2D36 /* PhotoCollectionViewCell.swift */,
+				CD39E9B5247010DF00C05D8C /* FlickrAPI.swift */,
+				CD39E9B7247014CE00C05D8C /* PhotoStore.swift */,
+				CD88FAE124794E10009B2D36 /* ImageStore.swift */,
+				CD39E9B924701ACE00C05D8C /* Photo.swift */,
 				CD39E98924700FA100C05D8C /* Main.storyboard */,
 				CD39E98C24700FA500C05D8C /* Assets.xcassets */,
 				CD39E98E24700FA500C05D8C /* LaunchScreen.storyboard */,
@@ -259,9 +283,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD39E9BA24701ACE00C05D8C /* Photo.swift in Sources */,
 				CD39E98824700FA100C05D8C /* ViewController.swift in Sources */,
+				CD39E9B42470103C00C05D8C /* PhotosViewController.swift in Sources */,
+				CD88FAE224794E10009B2D36 /* ImageStore.swift in Sources */,
 				CD39E98424700FA100C05D8C /* AppDelegate.swift in Sources */,
 				CD39E98624700FA100C05D8C /* SceneDelegate.swift in Sources */,
+				CD88FAE02479490B009B2D36 /* PhotoCollectionViewCell.swift in Sources */,
+				CD88FAE424794F1E009B2D36 /* PhotoInfoViewController.swift in Sources */,
+				CD88FADE24794549009B2D36 /* PhotoDataSource.swift in Sources */,
+				CD39E9B8247014CE00C05D8C /* PhotoStore.swift in Sources */,
+				CD39E9B6247010DF00C05D8C /* FlickrAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
